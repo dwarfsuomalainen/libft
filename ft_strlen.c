@@ -6,16 +6,16 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 12:40:11 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/03 14:31:20 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:32:06 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 
-int	ft_strlen(char *str);
+int	ft_strlen(const char *str);
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -27,11 +27,10 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-
-int	main(void)
-{
-	char s[] = "hive school";
+// int	main(void)
+// {
+// 	char s[] = "hive school";
 	
-	printf("%s contains %d symbols ", s, ft_strlen(s));
-	return (0);
-}
+// 	printf("%s contains %d symbols ", s, ft_strlen(s));
+// 	return (0);
+// }
