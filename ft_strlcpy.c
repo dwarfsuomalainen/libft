@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:42:18 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/14 15:31:08 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/15 15:40:25 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,14 @@ size_t	ft_strlcpy(char*restrict dst, const char*restrict src, size_t dstsize)
 	return (i);
 }
 
-int	main(void)
-{
-	char src[]="something to copy";
-	char dst[42] = "";
-	char src1[]="something to copy";
-	char dst1[42] = "";
+// int	main(void)
+// {
+// 	char src[]="something to copy";
+// 	char dst[42] = "";
+// 	char src1[]="something to copy";
+// 	char dst1[42] = "";
 
-	printf("\ndst after ft_strlcpy --> %s \nreturn of function --> %zu\n", dst, ft_strlcpy(dst, src, 16));
-	printf("\ndst after strlcpy --> %s \nreturn of function --> %zu \n", dst, strlcpy(dst1, src1, 16));
-	return (0);
-}
+// 	printf("\ndst after ft_strlcpy --> %s \nreturn of function --> %zu\n", dst, ft_strlcpy(dst, src, 16));
+// 	printf("\ndst after strlcpy --> %s \nreturn of function --> %zu \n", dst, strlcpy(dst1, src1, 16));
+// 	return (0);
+// }
