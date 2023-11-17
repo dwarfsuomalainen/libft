@@ -6,38 +6,47 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:51:37 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/17 11:35:09 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/17 16:03:15 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "libft.h"
-//#include <stdlib.h>
-#include <string.h> 
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+#include "libft.h" 
 
 
 char	*ft_strdup(const char *s1);
 
 char	*ft_strdup(const char *s1)
 {
-	int		len1;
+	size_t	lensrc;
 	char	*s2;
+	char	*dest;
 
-	len1 = ft_strlen(s1);
+	lensrc = 0;
 
-	s2 = (char *)malloc(len1 + 1);
-	if (s2 != NULL)
+	if (!s1)
+		return (NULL);
+	while (s1[lensrc])
+		lensrc++;
+	s2 = (char *)malloc(lensrc + 1);
+	dest = s2;
+	while (*s1)
 	{
-		strcpy(s2, s1);
+		*s2++ = *s1++;
 	}
-	return (s2);
+	*s2 = '\0';
+	return (dest);
 }
 
 int	main(void)
 {
 	char	str[] = "this string should appear in the output";
+	char	str1[] = "this string should appear in the output";
 
-	printf("OUTPUT --> %s", ft_strdup(str));
-	printf("OUTPUT of original strdup() --> %s", strdup(str));
+	printf("\nOUTPUT --> %s\n", ft_strdup(str));
+	printf("\nOUTPUT of original strdup() --> %s\n", strdup(str1));
 	return (0);
 }
