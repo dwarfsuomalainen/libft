@@ -6,13 +6,13 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:51:37 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/15 15:46:30 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/17 11:35:09 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "libft.h"
+//#include <stdlib.h>
 #include <string.h> 
 
 
@@ -20,12 +20,12 @@ char	*ft_strdup(const char *s1);
 
 char	*ft_strdup(const char *s1)
 {
-	//void	*mem;
-	int	len1;
-	len1 = 39;
+	int		len1;
 	char	*s2;
 
-	s2 = (char *)malloc(39 + 1);
+	len1 = ft_strlen(s1);
+
+	s2 = (char *)malloc(len1 + 1);
 	if (s2 != NULL)
 	{
 		strcpy(s2, s1);
