@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:26:44 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/16 15:45:09 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:14:28 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,18 @@ int	ft_strchr(const char *str, int c)
 	return (0);
 }
 
-int	main(void)
-{
-	int	c;
-	char str[] = "Is this a character you looking for ?";
-	char *strPtr;
+// int	main(void)
+// {
+// 	int	c;
+// 	char str[] = "Is this a character you looking for ?";
+// 	char *strPtr;
 
-	c = '!';
-	strPtr = str;
+// 	c = '!';
+// 	strPtr = str;
 
-	if ((ft_strchr (strPtr, c)) == c)
-		printf ("Character %c has been found", c);
-	else
-		printf ("Character %c has not been found", c);
-    return (0);
-}
+// 	if ((ft_strchr (strPtr, c)) == c)
+// 		printf ("Character %c has been found", c);
+// 	else
+// 		printf ("Character %c has not been found", c);
+//     return (0);
+// }

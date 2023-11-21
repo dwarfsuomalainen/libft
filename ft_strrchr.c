@@ -6,12 +6,12 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:09:53 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/06 10:50:13 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/21 10:52:31 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "ft_strlen.c"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c);
 
