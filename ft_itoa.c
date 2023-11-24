@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:56:41 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/23 12:20:41 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:33:29 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_intlen(int n)
 
 	intlen = 0;
 	if (n == 0)
-		return (1);
+		n = 1;
 	if (n < 0)
 		n = -n;
 	while (n != 0)
@@ -26,7 +26,7 @@ static int	ft_intlen(int n)
 		n /= 10;
 		intlen++;
 	}
-	printf("%d", intlen);
+//	printf("n length ->> %d\n", intlen);
 	return (intlen);
 }
 
@@ -42,14 +42,14 @@ char	*ft_itoa(int n)
 	else
 		isneg = 0;
 	length = ft_intlen(n);
-	num = (char *)malloc(length + isneg + 1);
+	num = (char *)malloc((length + isneg + 1));
 	if (!num)
 		return (NULL);
 	index = (length + isneg) - 1;
 	num[index + 1] = '\0';
 	if (isneg)
-		num[0] = '-';
-	n = -n;
+{		num[0] = '-';
+		n = -n;}
 	while (index >= 0 && n != 0)
 	{
 		num[index--] = '0' + n % 10;
@@ -58,11 +58,11 @@ char	*ft_itoa(int n)
 	return (num);
 }
 
-int	main(void)
-{
-	int	n;
+// int	main(void)
+// {
+// 	int	n;
 
-	n = -666999888;
-	printf("string representation of number %d is %s", n, ft_itoa(n));
-	return (0);
-}
+// 	n = 123;
+// 	printf("string representation of number %d is %s", n, ft_itoa(n));
+// 	return (0);
+// }

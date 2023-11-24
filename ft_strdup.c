@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rb <rb@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:51:37 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/17 20:48:38 by rb               ###   ########.fr       */
+/*   Updated: 2023/11/24 14:13:51 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,12 @@ char	*ft_strdup(const char *s1)
 	return (dest);
 }
 
-int	main(void)
-{
-	char	str[] = "this string should appear in the output";
-	char	str1[] = "this string should appear in the output";
+// int	main(void)
+// {
+// 	char	str[] = "this string should appear in the output";
+// 	char	str1[] = "this string should appear in the output";
 
-	printf("\nOUTPUT --> %s\n", ft_strdup(str));
-	printf("\nOUTPUT of original strdup() --> %s\n", strdup(str1));
-	return (0);
-}
+// 	printf("\nOUTPUT --> %s\n", ft_strdup(str));
+// 	printf("\nOUTPUT of original strdup() --> %s\n", strdup(str1));
+// 	return (0);
+// }
