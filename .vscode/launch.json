@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/rbogoudi/Documents/Developer/remote/libft",
-      "program": "/Users/rbogoudi/Documents/Developer/remote/libft/build/Debug/outDebug"
+      "cwd": "/Users/rb/Developer/libft",
+      "program": "/Users/rb/Developer/libft/build/Debug/outDebug"
     }
   ]
 }

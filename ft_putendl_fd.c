@@ -6,10 +6,14 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:01:52 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/17 11:02:30 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/27 13:12:11 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd)
+{
+        write(fd, s, ft_strlen(s));
+        write(fd,"\n",1);
+}
