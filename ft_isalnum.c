@@ -6,13 +6,11 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:55:03 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/10/24 16:19:01 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/28 13:41:57 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	ft_isalnum(char c);
+#include "libft.h"
 
 char	ft_isalnum(char c)
 {
@@ -23,13 +21,13 @@ char	ft_isalnum(char c)
 	return (0);
 }
 
-int	main(void)
-{
-	char	c;
+// int	main(void)
+// {
+// 	char	c;
 
-	c = '!';
-	if (ft_isalnum(c) < 1)
-		printf ("The character %c is NOT alphanumeric", c);
-	else
-		printf ("The character %c IS alphanumeric", c);
-}
+// 	c = '!';
+// 	if (ft_isalnum(c) < 1)
+// 		printf ("The character %c is NOT alphanumeric", c);
+// 	else
+// 		printf ("The character %c IS alphanumeric", c);
+// }

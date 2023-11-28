@@ -6,47 +6,43 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 12:35:13 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/10 13:58:45 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/28 14:38:21 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-void	*ft_memchr(const void *s, int c, size_t n);
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char			*str;
-	unsigned long	i;
+	const unsigned char	*str;
+	unsigned char		unc;
 
-	str = (char *)s;
-	i = 0;
-
-	while (i < n)
+	str = s;
+	unc = (unsigned char)c;
+	while (n--)
 	{
-		if (str[i] != c)
-			i++;
+		if (*str != unc)
+			str++;
 		else
-			return (str);
+			return ((void *)str);
 	}
 	return (NULL);
 }
 
-int	main(void)
-{
-	char	str[] = "Symbol * should be found";
-	int		c;
+// int	main(void)
+// {
+// 	char	str[] = "Symbol * should be found";
+// 	int		c;
 
-	c = '*';
+// 	c = '*';
 
-	printf("\nString to search --> %s\n", str);
-	if (ft_memchr(str, c, 21) != NULL)
-		printf("\nsymbol %c found\n", c);
-	else
-		printf("\nsymbol %c has not been found\n", c);
-	if (memchr(str, c, 21) != NULL)
-		printf("\nsymbol %c found\n", c);
-	else
-		printf("\nsymbol %c has not been found\n", c);
-}
+// 	printf("\nString to search --> %s\n", str);
+// 	if (ft_memchr(str, c, 21) != NULL)
+// 		printf("\nsymbol %c found\n", c);
+// 	else
+// 		printf("\nsymbol %c has not been found\n", c);
+// 	if (memchr(str, c, 21) != NULL)
+// 		printf("\nsymbol %c found\n", c);
+// 	else
+// 		printf("\nsymbol %c has not been found\n", c);
+// }

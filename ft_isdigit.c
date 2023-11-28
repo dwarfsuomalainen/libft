@@ -6,14 +6,11 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:12:25 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/10/24 16:19:44 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/28 13:50:05 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-
-char	ft_isdigit(char i);
+#include "libft.h"
 
 char	ft_isdigit(char i)
 {
@@ -22,13 +19,13 @@ char	ft_isdigit(char i)
 	return (0);
 }
 
-int	main(void)
-{
-	char	c;
+// int	main(void)
+// {
+// 	char	c;
 
-	c = 'r';
-	if (ft_isdigit(c) > 0)
-		printf ("The symbol %c is digit", c);
-	else
-		printf ("The symbol %c is NOT a digit", c);
-}
+// 	c = 'r';
+// 	if (ft_isdigit(c) > 0)
+// 		printf ("The symbol %c is digit", c);
+// 	else
+// 		printf ("The symbol %c is NOT a digit", c);
+// }
