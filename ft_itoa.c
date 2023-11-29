@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:56:41 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 14:08:33 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 10:23:51 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 	else
 		isneg = 0;
 	num = (char *)malloc((ft_intlen(n) + isneg + 1));
-	if (NULL)
+	if (!num)
 		return (NULL);
 	index = (ft_intlen(n) + isneg) - 1;
 	num[index + 1] = '\0';
