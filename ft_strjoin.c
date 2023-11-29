@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:53:39 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/20 13:58:38 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 14:35:13 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (newstring);
 }
 
-int	main(void)
-{
-	char s1[] = "first string";
-	char s2[] = "second string";
+// int	main(void)
+// {
+// 	char s1[] = "first string";
+// 	char s2[] = "second string";
 
-	if (ft_strjoin(s1 ,s2) == NULL)
-		printf("allocation fails");
-	printf("concatinated new string --> %s", ft_strjoin(s1,s2));
-	return (0);
-}
+// 	if (ft_strjoin(s1 ,s2) == NULL)
+// 		printf("allocation fails");
+// 	printf("concatinated new string --> %s", ft_strjoin(s1,s2));
+// 	return (0);
+// }

@@ -6,14 +6,11 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 14:55:34 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/15 13:45:34 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 14:41:33 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-void	*ft_memset(void *str, int c, size_t n);
+#include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t n)
 {
@@ -24,7 +21,6 @@ void	*ft_memset(void *str, int c, size_t n)
 	p = c;
 	s = (char *) str;
 	index = 0;
-
 	while (index < n)
 	{
 		s[index] = p;
@@ -38,7 +34,6 @@ void	*ft_memset(void *str, int c, size_t n)
 // 	char	str[] = "some of the spots will be replaced by";
 // 	char	*s;
 // 	char	z;
-
 // 	s = str;
 // 	z = '&';
 // 	printf("\noriginal string --> %s \n \n", s);
@@ -47,7 +42,4 @@ void	*ft_memset(void *str, int c, size_t n)
 // 	if ((ft_memset(s, z, 10)) == (memset(s, z, 10)))
 // 		printf("\nFunctions are equal \n");
 // 	return(0);
-
-
-
 // }

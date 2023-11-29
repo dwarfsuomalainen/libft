@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:01:52 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/27 15:08:53 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 14:42:34 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
-	write(fd,"\n",1);
+	write(fd, "\n", 1);
 }

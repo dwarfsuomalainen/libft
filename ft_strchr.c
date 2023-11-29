@@ -6,36 +6,36 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:26:44 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/21 11:14:28 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:23:23 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strchr(const char *str, int c);
-
-int	ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	while (*str != '\0')
+	while (*str)
 	{
-		if (*str == c)
-			return (c);
-		else
-			++str;
+		if (*str == (unsigned char)c)
+		{
+			return ((char *)str);
+		}
+		++str;
 	}
-	return (0);
+	if ((unsigned char)c == '\0')
+	{
+		return ((char *)str);
+	}
+	return (NULL);
 }
 
 // int	main(void)
 // {
 // 	int	c;
 // 	char str[] = "Is this a character you looking for ?";
-// 	char *strPtr;
+// 	c = "?";
 
-// 	c = '!';
-// 	strPtr = str;
-
-// 	if ((ft_strchr (strPtr, c)) == c)
+// 	if ((ft_strchr (*str, c)) == c)
 // 		printf ("Character %c has been found", c);
 // 	else
 // 		printf ("Character %c has not been found", c);

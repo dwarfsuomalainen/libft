@@ -6,13 +6,13 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:55:03 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 13:41:57 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 15:34:16 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_isalnum(char c)
+char	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);

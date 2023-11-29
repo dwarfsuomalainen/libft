@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:55:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/22 15:29:29 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 14:44:27 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	start = 0;
-
 	arr = (char **)malloc(sizeof(char *) * (ft_strlen(s) + 1));
 	if (!arr)
 		return (NULL);
@@ -40,17 +39,15 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-int	main(void)
-{
-	char	str[] = "this string to be splitted";
-	char	**result;
-
-	result = ft_split(str, ' ');
-	while (*result)
-	{
-		printf("%s\n", *result);
-		result++;
-	}
-
-	return (0);
-}
+// int	main(void)
+// {
+// 	char	str[] = "this string to be splitted";
+// 	char	**result;
+// 	result = ft_split(str, ' ');
+// 	while (*result)
+// 	{
+// 		printf("%s\n", *result);
+// 		result++;
+// 	}
+// 	return (0);
+// }

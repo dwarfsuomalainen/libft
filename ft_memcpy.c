@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:40:51 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 10:52:53 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 15:52:01 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // 	char 	src[] = "Here is a source for copying";
 // 	char	dst[42];
 // 	char	dst1[42];
-// 	printf("\nOwn function --> destination is --> %s\n",
-// ft_memcpy(dst, src, 21));
-// 	printf("\nOriginal function --> destination is --> %s\n",
-// memcpy(dst1, src, 21));
+// 	printf("\nOwn function --> destination is --> %s\n", ft_memcpy(dst, src, 21));
+// 	printf("\nOriginal function --> destination is --> %s\n", memcpy(dst1, src, 21));
 // }

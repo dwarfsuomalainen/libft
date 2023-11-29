@@ -6,13 +6,13 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:12:25 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 13:50:05 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 15:34:31 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_isdigit(char i)
+char	ft_isdigit(int i)
 {
 	while ((i >= '0' && i <= '9'))
 		return (1);

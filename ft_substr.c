@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 21:54:15 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/22 10:42:46 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/11/29 14:49:36 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!mem)
 		return (NULL);
 	substring = mem;
-
 	while (i < len && *s != '\0')
 	{
 		substring[i] = s[start];
