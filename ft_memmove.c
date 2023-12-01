@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:19:21 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:41:56 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/01 12:17:10 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char		*d;
-	char		*s;
-	size_t		i;
+	unsigned char			*d;
+	const unsigned char		*s;
+	size_t					i;
 
-	d = dst;
-	s = (char *)src;
+	d = (unsigned char *)dst;
+	s = (unsigned const char *)src;
 	i = 0;
+	if (d == s)
+		return (dst);
 	if (d < s)
 	{
 		while (i < len)
@@ -29,25 +31,22 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			i++;
 		}
 	}
-	else if (d > s)
+	else
 	{
-		while (i > len)
-		{
-			d[i - 1] = s[i -1];
-			i--;
-		}
+		d = dst + len;
+		s = src + len;
+		while (len--)
+			*(--d) = *(--s);
 	}
 	return (dst);
 }
 
 // int	main(void)
 // {
-// 	char 	src[] = "Here is a source for copying";
+// 	char 	src[] = "195654";
 // 	char	dst[42];
 // 	char	dst1[42];
 
-// 	printf("\nOwn function --> destination is --> %s\n",
-// ft_memmove(dst, src, 21));
-// 	printf("\nOriginal function --> destination is --> %s\n",
-// memmove(dst1, src, 21));
+// 	printf("\nOwn function --> destination is --> %s*\n", ft_memmove(dst, src, 21));
+// 	printf("\nOriginal function --> destination is --> %s*\n", memmove(dst1, src, 21));
 // }
