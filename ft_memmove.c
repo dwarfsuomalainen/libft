@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:19:21 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/01 12:17:10 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/02 14:18:00 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 // 	char	dst[42];
 // 	char	dst1[42];
 
-// 	printf("\nOwn function --> destination is --> %s*\n", ft_memmove(dst, src, 21));
-// 	printf("\nOriginal function --> destination is --> %s*\n", memmove(dst1, src, 21));
+// 	printf("\nOwn function --> destination is -->
+// %s*\n", ft_memmove(dst, src, 21));
+// 	printf("\nOriginal function --> destination is -->
+// %s*\n", memmove(dst1, src, 21));
 // }
