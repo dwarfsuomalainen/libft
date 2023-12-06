@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:56:41 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 10:23:51 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/05 11:22:42 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ static int	ft_intlen(long n)
 	if (n == 0)
 		n = 1;
 	if (n < 0)
+	{
 		n = -n;
+	}
 	while (n != 0)
 	{
 		n /= 10;
@@ -29,31 +31,38 @@ static int	ft_intlen(long n)
 	return (intlen);
 }
 
+int	ft_isneg(int i)
+{
+	if (i < 0)
+		return (i = 1);
+	else
+		return (0);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*num;
 	int		isneg;
 	int		index;
-	long	nn;
 
-	nn = n;
-	if (n < 0)
-		isneg = 1;
-	else
-		isneg = 0;
-	num = (char *)malloc((ft_intlen(n) + isneg + 1));
+	isneg = ft_isneg(n);
+	if (n == 0)
+		return (ft_strdup("0"));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	num = (char *)malloc(sizeof(char) * (ft_intlen(n) + (isneg + 1)));
 	if (!num)
 		return (NULL);
 	index = (ft_intlen(n) + isneg) - 1;
 	num[index + 1] = '\0';
-	if (isneg)
+	if (isneg != 0)
 	{
 		num[0] = '-';
 		n = -n;
 	}
 	while (index >= 0 && n != 0)
 	{
-		num[index--] = '0' + n % 10;
+		num[index--] = '0' + (n % 10);
 		n /= 10;
 	}
 	return (num);
@@ -62,8 +71,7 @@ char	*ft_itoa(int n)
 // int	main(void)
 // {
 // 	int	n;
-
-// 	n = 123;
+// 	n = -0;
 // 	printf("string representation of number %d is %s", n, ft_itoa(n));
 // 	return (0);
 // }

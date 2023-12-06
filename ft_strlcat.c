@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:18:51 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/02 14:18:13 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/05 16:24:15 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 // int	main(void)
 // {
-// 	char	src[] = "abcd";
-//     char	dst[20] = "pqrstuvwxyz";
-// 	char	src1[] = "abcd";
-//     char	dst1[20] = "pqrstuvwxyz";
+// 	char	src[] = "toto";
+//     char	dst[20] = "";
+// 	char	src1[] = "toto";
+//     char	dst1[20] = "";
 
-// 	size_t	result = ft_strlcat(dst, src, 1);
-// 	size_t	result1 = strlcat(dst1, src1, 1);
+// 	size_t	result = ft_strlcat(dst, src, 0);
+// 	size_t	result1 = strlcat(dst1, src1, 0);
 // 	printf("\nft_strlcat destination --> %s \nlength --> %zu\n", dst, result);
 // 	printf("\nstrlcat destination --> %s \nlength --> %zu\n", dst1, result1);
 // 	return (0);

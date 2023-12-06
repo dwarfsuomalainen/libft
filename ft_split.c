@@ -6,44 +6,89 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:55:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:44:27 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/05 12:27:48 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_lenword(char const *s, char c)
+{
+	int	len;
+
+	len = 0;
+	while (*s && *s != c)
+	{
+		len++;
+		s++;
+	}
+	return (len);
+}
+
+static	int	ft_countword(char const *s, char c)
+{
+	int	words;
+	int	wordlen;
+
+	words = 0;
+	while (*s)
+	{
+		wordlen = ft_lenword(s, c);
+		if (wordlen != 0)
+		{
+			words++;
+			s += wordlen;
+		}
+		else
+			s++;
+	}
+	return (words);
+}
+
+static char	*ft_freearr(char **arr, int n)
+{
+	int	i;
+
+	i = n;
+	while (i > 0)
+		free(arr[--i]);
+	free(arr);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
-	size_t	i;
-	size_t	j;
-	size_t	start;
+	int		i;
+	int		words;
+	int		wordlen;
 
 	i = 0;
-	j = 0;
-	start = 0;
-	arr = (char **)malloc(sizeof(char *) * (ft_strlen(s) + 1));
-	if (!arr)
+	words = ft_countword(s, c);
+	arr = (char **)malloc(sizeof(char *) * (words + 1));
+	if (arr == NULL)
 		return (NULL);
-	while (s[i])
+	while (i < words)
 	{
-		while (s[i] == c)
+		wordlen = ft_lenword(s, c);
+		if (wordlen != 0)
+		{
+			arr[i] = ft_substr(s, 0, wordlen);
+			if (arr[i] == NULL)
+				return ((char **) ft_freearr (arr, i));
 			i++;
-		start = i;
-		while (s[i] && s[i] != c)
-			i++;
-		arr[j] = ft_substr(s, start, i - start);
-		j++;
+		}
+		s += (wordlen + 1);
 	}
-	arr[j] = NULL;
+	arr[i] = NULL;
 	return (arr);
 }
 
 // int	main(void)
 // {
-// 	char	str[] = "this string to be splitted";
+// 	char	str[] = "split  ||this|for|me|||||!|";
 // 	char	**result;
-// 	result = ft_split(str, ' ');
+// 	result = ft_split(str, '|');
 // 	while (*result)
 // 	{
 // 		printf("%s\n", *result);

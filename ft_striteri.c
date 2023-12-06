@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:59:23 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:45:44 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/04 14:01:35 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	index;
 
-	index = 0;
-	if (s || f)
+	if (s && f)
 	{
-		while (&s[index])
+		index = 0;
+		while (s[index])
 		{
 			f(index, &s[index]);
 			index++;

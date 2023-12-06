@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:43:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/02 15:02:10 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/04 10:37:09 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	{
 		return ((char *)haystack);
 	}
-	while (*haystack && len >= needle)
+	while (*haystack && len >= needle_len)
 	{
 		if (*haystack == *needle
 			&& ft_strncmp(haystack, needle, needle_len) == 0)

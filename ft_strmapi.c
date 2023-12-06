@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:57:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:47:14 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/04 15:50:14 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (s == 0 || f == 0)
 		return (NULL);
 	processed = ft_strdup(s);
+	if (!processed)
+		return (NULL);
 	while (processed[index])
 	{
 		processed[index] = f(index, processed[index]);
