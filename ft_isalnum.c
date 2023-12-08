@@ -6,13 +6,13 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:55:03 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 15:34:16 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/08 12:23:33 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
@@ -20,14 +20,3 @@ char	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	char	c;
-
-// 	c = '!';
-// 	if (ft_isalnum(c) < 1)
-// 		printf ("The character %c is NOT alphanumeric", c);
-// 	else
-// 		printf ("The character %c IS alphanumeric", c);
-// }

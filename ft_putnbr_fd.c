@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:03:01 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:35:17 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:52:36 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
 }
-
-// int	main(void)
-// {
-// 	int	x;
-// 	int	fd;
-
-// 	x = -9;
-// 	fd = 1;
-
-// 	ft_putnbr_fd (x, fd);
-// 	}

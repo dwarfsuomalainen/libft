@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:55:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/05 12:27:48 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:52:42 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,16 +83,3 @@ char	**ft_split(char const *s, char c)
 	arr[i] = NULL;
 	return (arr);
 }
-
-// int	main(void)
-// {
-// 	char	str[] = "split  ||this|for|me|||||!|";
-// 	char	**result;
-// 	result = ft_split(str, '|');
-// 	while (*result)
-// 	{
-// 		printf("%s\n", *result);
-// 		result++;
-// 	}
-// 	return (0);
-// }

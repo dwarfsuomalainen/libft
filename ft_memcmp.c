@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 14:23:56 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 14:44:05 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:38:29 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,21 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-//
-// int	main(void)
-// {
-// 	char	str1[] = "String to33compare";
-// 	char	str2[] = "String to compare";
-// 	if (ft_memcmp(str1, str2, 10) == 0)
-// 		printf("\nstr1 %s and str2 %s are identical\n", str1, str2);
-// 	else
-// 		printf("Difference between str1 and str2 is %d\n", 
-	//ft_memcmp(str1, str2, 11));
-// 	if (memcmp(str1, str2, 10) == 0)
-// 		printf("\nstr1 %s and str2 %s are identical\n", str1, str2);
-// 	else
-// 		printf("\nDifference between str1 and str2 is %d\n", 
-	//memcmp(str1, str2, 11));
-// 		memcmp(str1, str2, 10);
-// }
-//

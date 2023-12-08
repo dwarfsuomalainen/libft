@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:06:17 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:38:40 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:43:47 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-// int	main(void)
-// {
-// 	int	x;
-
-// 	x = '*';
-// 	printf ("Character %c to lower case is %c", x, ft_tolower(x));
-// 	return (0);
-// }

@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/12/06 16:07:31 by rbogoudi          #+#    #+#              #
+#    Updated: 2023/12/08 10:13:54 by rbogoudi         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 SOURCES = 	ft_atoi.c \
@@ -39,9 +51,12 @@ OBJECTS = $(SOURCES:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 
-HEADERS = includes/libft.h
+HEADERS = libft.h
 
 CC = cc
+
+.PHONY:
+	all clean fclean re
 
 all: $(NAME)
 
@@ -49,13 +64,9 @@ $(NAME): $(OBJECTS)
 	ar -rcs $(NAME) $(OBJECTS)
 
 clean:
-	rm -f $(OBJECTS)
+	rm -rf $(OBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 
-re: 
-	fclean all
-
-.PHONY:
-	all clean fclean re
+re: fclean all

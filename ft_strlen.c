@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 12:40:11 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:37:35 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:52:48 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,3 @@ int	ft_strlen(const char *str)
 	}
 	return (i);
 }
-// int	main(void)
-// {
-// 	char s[] = "hive school";
-// 	printf("%s contains %d symbols ", s, ft_strlen(s));
-// 	return (0);
-// }

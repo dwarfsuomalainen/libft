@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:41:27 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 13:03:43 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/07 11:26:46 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,22 +25,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (mem);
 }
-
-// int	main(void)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	int* arr1 = (int*)calloc(5, sizeof(int));
-
-// 	if (arr1 != NULL)
-// 	{
-// 		while (i < 5)
-// 		{
-// 			printf("%d ", arr1[i]);
-// 			i++;
-// 		}
-// 		free(arr1);
-// 	}
-// 	return (0);
-// }

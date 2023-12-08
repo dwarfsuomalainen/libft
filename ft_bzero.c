@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 11:14:50 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 12:49:15 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:36:40 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,3 @@ void	ft_bzero(void *s, size_t n)
 		index++;
 	}
 }
-
-// int	main(void)
-// {
-// 	// char	*s;
-// 	// char	*s1;
-// 	char	orig[] = "some of the spots will be replaced by";
-// 	char	orig1[] = "some of the spots will be replaced by";
-// 	// s = "some of the spots will be replaced by";
-// 	// s1 = "some of the spots will be replaced by";
-// 	ft_bzero((void *)orig, (0));
-// 	printf("\nown ft_bzero --> %s \n", orig);
-// 	bzero(orig1, (0));
-// 	printf("\nOriginal bzero --> %s \n", orig1);
-// 	return (0);
-// }

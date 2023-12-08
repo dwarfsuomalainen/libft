@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:57:49 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/04 15:50:14 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:52:54 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (processed);
 }
-
-// char	fun(unsigned int p, char c)
-// {
-// 	p = 0;
-// 	c = c + 1;
-// 	return (c);
-// }
-// int	main(void)
-// {
-// 	char	str[] = "string on which to iterate";
-// 	// unsigned int	x = 0;
-// 	printf("original string --> 
-//%s, processed string --> %s",
-// str, ft_strmapi(str, fun));
-// }

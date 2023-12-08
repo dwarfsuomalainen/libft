@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:42:18 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:46:29 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:40:14 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	char src[]="something to copy";
-// 	char dst[42] = "";
-// 	char src1[]="something to copy";
-// 	char dst1[42] = "";
-// 	printf("\ndst after ft_strlcpy --> 
-//%s \nreturn of function --> %zu\n", dst,
-// ft_strlcpy(dst, src, 16));
-// 	printf("\ndst after strlcpy --> 
-//%s \nreturn of function --> %zu \n", 
-//dst, strlcpy(dst1, src1, 16));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 14:55:34 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/29 14:41:33 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:38:51 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,18 +28,3 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char	str[] = "some of the spots will be replaced by";
-// 	char	*s;
-// 	char	z;
-// 	s = str;
-// 	z = '&';
-// 	printf("\noriginal string --> %s \n \n", s);
-// 	printf("own memset --> %s %c \n \n", ft_memset(s, z, 10), z);
-// 	printf("original memset --> %s %c \n", memset(s, z, 10), z);
-// 	if ((ft_memset(s, z, 10)) == (memset(s, z, 10)))
-// 		printf("\nFunctions are equal \n");
-// 	return(0);
-// }

@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 10:47:11 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/28 13:49:06 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:37:30 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	int	c;
-
-// 	c = 128;
-// 	if (ft_isascii(c) > 0)
-// 		printf("Symbol %c is an ASCII symbol", c);
-// 	else
-// 		printf("Symbol %c is NOT an ASCII symbol", c);
-// }

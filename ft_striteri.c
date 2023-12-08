@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:59:23 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/04 14:01:35 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:39:58 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		}
 	}
 }
-
-//i do not operate to values into this f,
-// instead i operate values by its 
-// addresses straight in the string! 

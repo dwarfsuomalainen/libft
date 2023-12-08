@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:00:15 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/11/27 15:08:12 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:38:57 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }
-
-// int main(void)
-// {
-//     int     fd;
-//     int    c;
-
-//     fd = 1;
-//     c = 'X';
-
-//     ft_putchar_fd(c, fd);
-// }

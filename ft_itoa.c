@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:56:41 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/05 11:22:42 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:51:55 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,3 @@ char	*ft_itoa(int n)
 	}
 	return (num);
 }
-
-// int	main(void)
-// {
-// 	int	n;
-// 	n = -0;
-// 	printf("string representation of number %d is %s", n, ft_itoa(n));
-// 	return (0);
-// }

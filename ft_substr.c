@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 21:54:15 by rbogoudi          #+#    #+#             */
-/*   Updated: 2023/12/05 15:41:58 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2023/12/06 10:43:43 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring[len] = '\0';
 	return (substring);
 }
-
-// int	main(void)
-// {
-//     char    str[] = "string to be trimmed";
-//     printf("substring --> >%s<\n", ft_substr(str, 5, 6));
-// 	if (ft_substr(str, 23, 27) == NULL)
-// 	{
-// 		printf("allocation fails");
-// 	}
-// 	return (0);
-// }
-// // Allocates (with malloc(3)) and returns a substring
-// // from the string ’s’.
-// // The substring begins at index ’start’ and is of
-// // maximum size ’len’.
