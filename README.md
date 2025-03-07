@@ -87,5 +87,5 @@ gcc your_file.c -L. -lft -o your_program
 This project is released under the MIT License.
 
 ## Author
-Created by [Roman Bogoudinov] during Hive Helsinki studies in 2024.
+Created by Roman Bogoudinov during Hive Helsinki studies in 2024.
 
