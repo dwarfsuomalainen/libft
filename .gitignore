@@ -1,0 +1,35 @@
+# Compiled object files, libraries, executables
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.dll
+*.dylib
+
+# VS Code specific files
+.vscode/
+
+# Backup and temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Dependency directories
+node_modules/
+
+
+# Debugging files
+*.dSYM/
+*.gcda
+*.gcno
+*.gcov
+
+# Generated files
+*.generated.c
+*.generated.h
+
+# Package manager files
+*.lock
